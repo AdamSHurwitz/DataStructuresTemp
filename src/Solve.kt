@@ -14,6 +14,7 @@ fun someFun(){
 
     val someUnboxedNullArray = CharArray(18)
 
+    // Rows by columns
     val someTwoDArray = arrayOf(arrayOf("stringOne"), arrayOf("stringTwo"), arrayOf("stringThree"))
 
     val someArrayList = arrayListOf("stringOne", "stringTwo", "stringThree")
