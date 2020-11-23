@@ -32,6 +32,8 @@ fun someFun(){
     // Use for binary search.
     val someTreeMap = TreeMap<String, Int>()
 
+    val someSet = setOf<String>()
+
     val someHashSet = hashSetOf<String>()
 
 }
