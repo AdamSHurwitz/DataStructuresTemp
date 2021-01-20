@@ -15,7 +15,13 @@ fun someFun(){
     val someUnboxedNullArray = CharArray(18)
 
     // Rows by columns
-    val someTwoDArray = arrayOf(arrayOf("stringOne"), arrayOf("stringTwo"), arrayOf("stringThree"))
+    val someTwoDArray = arrayOf(
+            arrayOf("columnOne", "columnTwo"),
+            arrayOf("columnOne", "columnTwo"),
+            arrayOf("columnOne", "columnTwo")
+    )
+    val emptyTwoDArray = Array(3, { CharArray(3) })
+    val anotherEmptyTwoDArray = Array(3) { CharArray(3) }
 
     val someArrayList = arrayListOf("stringOne", "stringTwo", "stringThree")
 
@@ -25,7 +31,10 @@ fun someFun(){
     val someArrayDeque = ArrayDeque<String>()
 
     // Use for min/max heap
-    val somePriorityQueue = PriorityQueue<String>()
+    // Min
+    val someMinPriorityQueue = PriorityQueue<String>()
+    // Max
+    val someMaxPriorityQueue = PriorityQueue<String>(Collections.reverseOrder())
 
     val someHashMap = hashMapOf<String, Int>()
 
